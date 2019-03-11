@@ -30,7 +30,7 @@ $oauth = new OAuth($api_key, $api_sec, OAUTH_SIG_METHOD_HMACSHA1, OAUTH_AUTH_TYP
 $oauth->enableDebug();
 
 // Checking whether we already went through user authentication or not
-// (If yes, then there is token/secred saved in the config file) 
+// (If yes, then there is token/secret saved in the config file) 
 if ($oauth_token=="" || $oauth_token_secret=="") {
   echo "No OAuth access token/secret found.\n";
 
