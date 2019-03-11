@@ -23,10 +23,10 @@ just quick explanation of what it does:
 album name are removed).
 4. Goes through all photos from all these sets.
 5. For every photo gets list of all available sizes.
-6. Downloads the first photo size from $pref_sizes array (from left to right, so
-it's a good idea to put "Original" on the last place, because there's always
-an original of the photo). The name of the local photo file is either it's
-Flickr title or date taken (when photo has no title; again no funny
+6. Downloads the first existing photo size from $pref_sizes array (from left to
+right, so it's a good idea to put "Original" on the last place, because there's 
+always an original of the photo). The name of the local photo file is either
+it's Flickr title or date taken (when photo has no title; again no funny
 characters), extension is used from the Flickr photo URL.
 
 Notice: You are _required_ to edit first three PHP code lines - you need to specify
